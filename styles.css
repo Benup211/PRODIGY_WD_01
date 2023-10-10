@@ -19,3 +19,46 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
+a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:500px) {
+    nav{
+        width:90%;
+        min-height: 80px;
+        flex-direction: column;
+    }
+    #links>a{
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and ((min-width:501px) and (max-width:1000px)) {
+    nav{
+        width:80%;
+        min-height: 80px;
+        flex-direction: column;
+    }
+    #links>a{
+        display: block;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1001px) {
+    nav{
+        width:80%;
+        min-height: 80px;
+    }
+}
